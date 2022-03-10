@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fontprincipal: 'Nunito', sans-serif;
+    --cor1: #D44000;
+    --cor3: #8E7477;
+    --corf: #3B5998;
+}
+
+body {
+    background: #D44000 url("imagens/foto-exemplo-1.jpg") center / cover no-repeat fixed;
+}
+
+/* header {
+    margin: 10vh;
+} */
+
+div.central {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+#email, #senha, #criar, #entrar {
+    width: 282px;
+    height: 43px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    border: none;
+    font: 14px var(--fontprincipal);
+}
+
+#email, #criar {
+    margin-bottom: 16px;
+}
+
+#senha {
+    margin-bottom: 32px;
+}
+
+#email, #senha {
+    width: 270px;
+    height: 43px;
+    padding-left: 12px;
+}
+
+#email::placeholder, #senha::placeholder{
+    color: var(--cor3);
+}
+
+#criar {
+    background-color: var(--cor1);
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+}
+
+#criar:hover, #entrar:hover{
+    transform: scale(1.05);
+    transition-duration: (0.4);
+}
+
+#entrar {
+    background-color: var(--corf);
+}
+
+#entrar > div > p {
+    text-align: center;
+    color: #FFF;
+    margin-left: 4px;
+}
+
+#entrar > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#entrar > div > img {
+    width: 14px;
+    height: 14px;
+    fill: #FFF;
+}
