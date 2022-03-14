@@ -36,7 +36,7 @@ div.central {
     margin-bottom: 32px;
 }
 
-#email, #senha, #criar, #entrar {
+#email, #senha, #criar, #facebook, #google {
     width: 282px;
     height: 43px;
     border-radius: 8px;
@@ -46,7 +46,7 @@ div.central {
     font: 14px var(--fontprincipal);
 }
 
-#email, #criar {
+#email, #criar, #facebook {
     margin-bottom: 16px;
 }
 
@@ -71,29 +71,41 @@ div.central {
     font-weight: bold;
 }
 
-#criar:hover, #entrar:hover{
+#facebook:hover, #google:hover{
     transform: scale(1.05);
     transition-duration: (0.4);
 }
 
-#entrar {
+#facebook {
     background-color: var(--corf);
 }
 
-#entrar > div > p {
+
+#facebook > div > p {
     text-align: center;
     color: #FFF;
     margin-left: 4px;
 }
 
-#entrar > div {
+#facebook > div, #google > div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#entrar > div > img {
+#facebook > div > img, #google > div > img{
     width: 14px;
     height: 14px;
     fill: #FFF;
+}
+
+
+#google {
+    background-color: #FFF;
+}
+
+#google > div > p {
+    text-align: center;
+    color: var(--cor3);
+    margin-left: 4px;
 }
