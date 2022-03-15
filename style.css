@@ -2,9 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
+    border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
 }
 
 :root {
@@ -18,10 +23,6 @@ body {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("imagens/foto-exemplo-1.jpg") center / cover no-repeat fixed;
 }
 
-/* header {
-    margin: 10vh;
-} */
-
 div.central {
     width: 100vw;
     height: 100vh;
@@ -31,55 +32,139 @@ div.central {
     align-items: center;
 }
 
-.logo {
+.aviso {
+    font: 14px var(--fontprincipal);
+    color: #FFF;
+    height: 20px;
+    width: 360px;
+    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 5px;
 }
 
-#email, #senha, #criar, #facebook, #google {
-    width: 282px;
+.aviso span {
+    font-weight: bolder;
+}
+
+/* CABEÇALHO */
+
+.logo {
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+
+#validade {
+    height: 20px;
+    margin: 2px 0 10px 15px;
+    font: bold 14px var(--fontprincipal);
+    color: #fff;
+}
+
+
+/* EMAIL */
+
+#email {
+    display: block;
+    width: 270px;
     height: 43px;
     border-radius: 8px;
-    display: block;
     margin: auto;
     border: none;
     font: 14px var(--fontprincipal);
-}
-
-#email, #criar, #facebook {
     margin-bottom: 16px;
-}
-
-#senha {
-    margin-bottom: 32px;
-}
-
-#email, #senha {
-    width: 270px;
-    height: 43px;
     padding-left: 12px;
 }
 
-#email::placeholder, #senha::placeholder{
+#email::placeholder {
     color: var(--cor3);
 }
 
+#email:focus {
+    border: 3px solid var(--cor1);
+    outline: 0;
+    margin: -3px -3px 13px -3px;
+}
+
+/* SENHA */
+
+#senha {
+    display: block;
+    width: 235px;
+    height: 43px;
+    border-radius: 8px;
+    margin: auto;
+    border: none;
+    font: 14px var(--fontprincipal);
+    padding: 0 35px 0 12px ;
+}
+
+#senha::placeholder{
+    color: var(--cor3);
+}
+
+#senha:focus {
+    border: 3px solid var(--cor1);
+    outline: 0;
+    margin: -3px;
+}
+
+/* OLHO DA SENHA */
+
+#olhoAberto {
+    width: 20px;
+    position: absolute;
+    align-items: center;
+    z-index: 1;
+    left: 50%;
+    transform: translate(110px,12px);
+    cursor: pointer;
+}
+
+
+/* CRIAR CONTA */
+
 #criar {
+    display: block;
+    width: 282px;
+    height: 43px;
+    border-radius: 8px;
+    margin: auto;
+    border: none;
+    font: 14px var(--fontprincipal);
+    margin-bottom: 16px;
     background-color: var(--cor1);
     text-align: center;
     color: #FFF;
     font-weight: bold;
 }
 
-#facebook:hover, #google:hover{
-    transform: scale(1.05);
+#criar:hover {
+    transform: scale(1.009);
     transition-duration: (0.4);
+    cursor: pointer;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.489)
 }
+/* FACEBOOK */
 
 #facebook {
+    display: block;
+    width: 282px;
+    height: 43px;
+    border-radius: 8px;
+    margin: auto;
+    border: none;
+    font: 14px var(--fontprincipal);
+    margin-bottom: 16px;
     background-color: var(--corf);
+
 }
 
+#facebook:hover {
+    transform: scale(1.05);
+    transition-duration: (0.4);
+    cursor: pointer;
+}
 
 #facebook > div > p {
     text-align: center;
@@ -87,25 +172,54 @@ div.central {
     margin-left: 4px;
 }
 
-#facebook > div, #google > div {
+#facebook > div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#facebook > div > img, #google > div > img{
+#facebook > div > img {
     width: 14px;
     height: 14px;
     fill: #FFF;
 }
 
 
+/* GOOGLE */
+
 #google {
+    display: block;
+    width: 282px;
+    height: 43px;
+    border-radius: 8px;
+    margin: auto;
+    border: none;
+    font: 14px var(--fontprincipal);
     background-color: #FFF;
+
 }
 
 #google > div > p {
     text-align: center;
     color: var(--cor3);
     margin-left: 4px;
+}
+
+
+#google:hover {
+    transform: scale(1.05);
+    transition-duration: (0.4);
+    cursor: pointer;
+}
+
+#google > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#google > div > img {
+    width: 14px;
+    height: 14px;
+    fill: #FFF;
 }

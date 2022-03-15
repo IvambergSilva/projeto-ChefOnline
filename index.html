@@ -17,23 +17,36 @@
                 <img src="imagens/logo.svg" alt="logo">
             </div>
         </header>
+
+        <p class="aviso">Para fins de testes use o email: <span>a@a</span> e a senha: <span>123a</span></p>
         
         <section class="section">
-            <input type="text" placeholder="Informe seu e-mail" id="email">
+            <input type="email" placeholder="Informe seu e-mail" id="email">
+            <img src="imagens/olhoaberto.png" alt="olho aberto" id="olhoAberto">
             <input type="password" placeholder="Informe sua senha" id="senha">
-            <button id="criar">
-                <p>Criar conta</p>
+
+            <div id="validade"></div>
+            
+            <button id="criar" onclick="criarConta()">
+                    <p>Criar conta</p>
             </button>
-            <button id="facebook">
-                <div><img src="imagens/facebook-logo.svg" alt="logo facebook">
-                <p>Entrar com Facebook</p>
-                </div>
-            </button>
-            <button id="google">
-                <div><img src="imagens/google-logo.png" alt="logo google">
-                <p>Entrar com Google</p>
-                </div>
-            </button>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <button id="facebook">
+                    <div>
+                        <img src="imagens/facebook-logo.svg" alt="logo facebook">
+                        <p>Entrar com Facebook</p>
+                    </div>
+                </button>
+            </a>
+            <a href="https://www.gmail.com/" target="_blank">
+                <button id="google">
+                    <div>
+                        <img src="imagens/google-logo.png" alt="logo google">
+                        <p>Entrar com Google</p>
+                    </div>
+                </button>
+            </a>
         </section>
     </div>
 
