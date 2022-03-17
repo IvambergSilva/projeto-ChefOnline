@@ -1,0 +1,410 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFF;
+    margin-bottom: 100px;
+}
+
+:root {
+    --fontprincipal: 'Nunito', sans-serif;
+    --cor1: #D44000;
+    --cor2: #362222;
+    --cor3: #8E7477;
+    --corf: #3B5998;
+}
+
+header{
+    height: 140px;
+    background-color: var(--cor1);
+}
+
+.containerHeader {
+    display: flex;
+    justify-content: center;
+}
+
+/*O que você está procurando*/
+#headerPrincipal{  
+    width: 208px;
+    font: bold 16px var(--fontprincipal);
+    color: #FFF;
+    margin-top: 30px;
+    margin-right: 72px;
+}
+
+/* Parágrafo do filtro */
+#filter {
+    display: flex;
+    width: 60px;
+    align-items: center;
+    font:  16px var(--fontprincipal);
+    color: #FFF;
+    margin-top: 30px;
+}
+
+#filtro{
+    width: 13px;
+    margin-right: 8px;
+}
+
+#filter:hover {
+    transform: scale(1.2);
+}
+
+#pesquise {
+    width: 328px;
+    height: 43px;
+    border-radius: 8px;
+    margin: 12px auto;
+    border: none;
+    font: 14px var(--fontprincipal);
+    padding-left: 12px;
+}
+
+#pesquise:focus {
+    outline: 0;
+    border: 2px solid var(--cor2);
+    margin: 10px auto;
+}
+
+.containerPesquisa{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+}
+
+#lupa {
+    width: 14px;
+    padding-right: 14px;
+    position: absolute;
+    right: 0;
+    
+}
+
+#lupa:hover {
+    transform: scale(1.2);
+}
+
+
+
+.subtitulo {
+    font: bold 16px var(--fontprincipal);
+    color: var(--cor2);
+    margin: 17px auto 12px;
+    width: 160px;
+    display: flex;
+    transform: translate(-90px);
+}
+
+
+
+.fotoHome{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.fotoHome > div{
+    display: grid;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 52.6%, rgba(0, 0, 0, 0.6) 100%), url("burguer-central.png");
+}
+
+
+.fotoHome > div > img {
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: end;
+    display: grid;
+    
+}
+
+.fotoHome > div > .monstro {
+    padding: 0px 0 15px 19px;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+}
+
+
+
+
+
+
+.burguerCentral{
+    width: 340px;
+    height: 140px;
+    z-index: -1;
+}
+
+.monstro {
+    font: bolder 16px var(--fontprincipal);
+    color: #FFF;
+    text-align: left;
+}
+
+.bhd{
+    font: 16px var(--fontprincipal);
+    color: #FFF;
+}
+
+
+#botaoEuQuero {
+    width: 106px;
+    height: 26px;
+    border-radius: 8px;
+    border: none;
+    font: bolder 16px var(--fontprincipal);
+    background-color: var(--cor1);
+    color: #FFF;
+    position: absolute;
+    left: 50%;
+    transform: translate(55px, 33px);
+}
+
+#botaoEuQuero:hover {
+    cursor: pointer;
+}
+
+
+
+.subtitulo2 {
+    font: bold 16px var(--fontprincipal);
+    color: var(--cor2);
+    margin: 17px 72px 0 0;
+    width: 130px;
+    margin-right: 130px; 
+}
+
+.teste{
+    display: flex;
+    justify-content: center;
+}
+
+#verTodas {
+    width: 80px;
+    align-items: center;
+    font:  16px var(--fontprincipal);
+    color: var(--cor1);
+    margin-top: 17px;
+}
+
+#verTodas:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#verTodasSeta{
+    width: 8px;
+    margin-left: 4px;
+}
+
+
+
+
+.gridPromocao {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 340px;
+    margin: 17px auto 0px;
+}
+
+.gridPromocao > div:nth-child(even){
+   margin-left: 10px;
+}
+
+.gridPromocao > div > img{
+    width: 165px;
+}
+
+
+
+.quadro{
+    width: 165px;
+    height: 165px;
+    margin-bottom: 20px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.quadro:nth-child(n+5) {
+    margin-bottom: 0;
+}
+
+.quadro:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.legenda {
+    background-color: #FFF;
+    margin-top: -4px;
+    padding: 8px 0 2px 8px;
+}
+
+.pSmall{
+    font: bold 14px var(--fontprincipal);
+    color: var(--cor2);
+    margin-bottom: 2px;
+}
+
+.pLarge{
+    font:  12px var(--fontprincipal);
+    color: var(--cor3);
+}
+
+.footerLegenda{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.star {
+    width: 12px;
+    margin-right: -2px;
+    margin-top: 7px;
+}
+
+.preco {
+    font: bold 12px var(--fontprincipal);
+    color: var(--cor1);
+    margin-right: 6px;
+}
+
+
+
+.subtitulo3 {
+    font: bold 16px var(--fontprincipal);
+    color: var(--cor2);
+    margin: 17px auto 12px;
+    width: 180px;
+    display: flex;
+    transform: translate(-80px);
+}
+
+
+
+.scroll {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4,1fr);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 115px;
+    width: 330px;
+    margin: auto;
+    padding: 10px 0 0 10px;
+}
+
+
+.recomendacao {
+    background-color: var(--cor1);
+    width: 310px;
+    height: 90px;
+    margin-right: 20px;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 2px 4px 10px rgba(136, 0, 0, 0.25);
+    display: flex;
+}
+
+.seta {
+    position: absolute;
+    left: 15px;
+    bottom: -4px;
+    width: 15px;
+    transform: rotate(45deg);
+}
+
+.comentarios{
+    display: flex;
+    align-items: center;
+}
+
+.recomendacao:hover {
+    transform: scale(1.03);
+}
+
+.comentarios > img {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 0 12px 0 15px;
+}
+
+.depoimento > .cliente {
+    font: bold 14px var(--fontprincipal);
+    color: #FFF;
+    margin-bottom: 3px;
+}
+
+.depoimento > .depoimentoTexto {
+    font: 12px var(--fontprincipal);
+    color: #FFF;
+    text-align: justify;
+    margin-right: 12px;
+}
+
+
+
+.teste1::-webkit-scrollbar {
+    height: 8px;
+}
+
+.teste1::-webkit-scrollbar-track{
+    background-color: #C4C4C4;
+    border-radius: 4px;
+}
+
+.teste1::-webkit-scrollbar-thumb{
+    background-color: var(--cor2);
+    border-radius: 4px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    background-color: var(--cor1);
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+ul {
+    display: flex;
+    margin: auto;
+}
+
+ul > li {
+    list-style-type: none;
+    text-align: center;
+}
+
+ul > li:nth-child(n+2){
+    margin-left: 41px;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+.categoria{
+    width: 40px;
+}
+
+.nomeLegenda {
+    color: #FFF;
+    font: 12px var(--fontprincipal);
+}

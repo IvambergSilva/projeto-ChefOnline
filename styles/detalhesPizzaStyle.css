@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFF;
+    /* background-color: #36222236; */
+    /* margin-bottom: 100px; */
+}
+
+:root {
+    --fontprincipal: 'Nunito', sans-serif;
+    --cor1: #D44000;
+    --cor2: #362222;
+    --cor3: #8E7477;
+    --corf: #3B5998;
+}
+
+
+.headerImg > div{
+    display: grid;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.54) 48.44%, rgba(0, 0, 0, 0.19) 100%), url("/imagens/pizzacentral.png") center / cover;
+}
+
+.pizzaCentral {
+    height: 190px;
+    width: 360px;
+    position: relative;
+    margin: auto;
+}
+
+.headerImg {
+    height: 190px;
+ 
+    background: linear-gradient(90deg, rgb(212, 64, 0) 0%, rgba(212, 64, 0, 0.5) 50%, rgb(212, 64, 0) 100%);
+}
+
+.headerImg p {
+    font: 16px var(--fontprincipal);
+    color: #FFF;
+}
+
+
+.voltar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 17px;
+    cursor: pointer;
+}
+.setaVoltar {
+    height: 8px;
+    margin: 0 4px 0 10px;
+}
+
+.favoritar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin: 17px 10px 0 0;
+    right: 0;
+    
+}
+
+.starFavoritar {
+    height: 17px;
+    margin: 0 4px 0 0;
+}
+
+
+
+.subtitulo {
+    font: bold 16px var(--fontprincipal);
+    color: var(--cor2);
+    margin: 17px auto 0;
+    width: 160px;
+    display: flex;
+    transform: translate(-90px);
+}
+
+.faixaDePreco {
+    font: bold 14px var(--fontprincipal);
+    color: var(--cor1);
+    width: 130px;
+    display: flex;
+    margin: 6px auto 0;
+    transform: translate(-105px);
+}
+
+.descricao {
+    font: 14px var(--fontprincipal);
+    color: var(--cor3);
+    width: 340px;
+    text-align: justify;
+    display: flex;
+    margin: 12px auto 0;
+}
+
+
+
+.imgquadra{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin-top: 20px; 
+}
+
+.produtos > li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+
+}
+.container > div {
+    height: 60px;
+}
+
+.imgquadra  .nome {
+    font: bold 14px var(--fontprincipal);
+    margin-left: 8px;
+}
+
+.imgquadra .ingredientes {
+    font: 14px var(--fontprincipal);
+    color: var(--cor3);
+    margin: 5px 0 0 8px;
+    width: 180px;
+}
+
+.imgquadra img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    display: flex;
+}
+
+
+
+
+.displayDeQtdeEPreco{
+    display: grid;
+    margin-left: 16px;
+}
+
+.quantidade {
+    display: flex;
+}
+
+.diminuir, .aumentar {
+    width: 28px;
+    height: 22px;
+    background-color: var(--cor1);
+    border-radius: 4px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.aumentar:hover, .diminuir:hover{
+    transform: scale(1.03);
+}
+
+.quantidade span{
+    display: flex;
+    justify-content: center;
+    font: 14px var(--fontprincipal);
+}
+
+.qtdeNumerico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 22px;
+    background-color: #C4C4C4;
+    z-index: -1;
+    margin: 7px -4px 0 -4px;
+    font: 14px var(--fontprincipal);
+}
+
+.precoDaQuantidade {
+    font: bold 14px var(--fontprincipal);
+    color: var(--cor1); 
+    margin: auto;
+}  
+
+
+
+.finalizacao {
+    background-color: var(--cor1);
+    height: 260px;
+    margin-top: 34px;
+}
+
+.finalizacao > img {
+    width: 40px;
+    display: block;
+    margin: 0px auto 6px;
+    padding: 15px 0 0 0;
+}
+
+.finalizacao p {
+    font: 18px var(--fontprincipal);
+    color: #FFF;
+    text-align: center;
+}
+
+.finalizacao p:nth-child(3n+2) {
+    font-weight: bold;
+    margin: 7px 0 14px 0;
+}
+
+.pedirAgora{
+    background-color: var(--cor2);
+    display: flex;
+    align-items: center;
+    width: 224px;
+    height: 40px;
+    margin: auto;
+    border: none;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+.pedirAgora:hover{
+    transform: scale(1.1);
+}
+
+.pedirAgora span {
+    font: 18px var(--fontprincipal);
+    color: #FFF;
+    margin: auto;
+}
+
+.pedirAgora img {
+    width: 15px;
+    margin-right: 6px;
+}

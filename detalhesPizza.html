@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes - pizza</title>
+    <link rel="stylesheet" href="styles/detalhesPizzaStyle.css">
+    <link rel="shortcut icon" href="/imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <header class="headerImg">
+        <div class="pizzaCentral">
+            <div class="voltar">
+                <img src="imagens/setaVoltar.png" alt="seta de voltar" class="setaVoltar">
+                <p>Voltar</p>
+            </div>
+            <div class="favoritar">
+                <img src="imagens/favorito.png" alt="favoritar" class="starFavoritar">
+                <p>Favoritar</p>
+
+            </div>
+        </div>
+    </header>
+
+    <p class="subtitulo">Pizzaria Coliseu</p>
+    <p class="faixaDePreco">A partir de R$ 30,00</p>
+    <p class="descricao">Sobre o local: Convide toda a sua família e amigos, e venha conhecer a melhor pizzaria da região! </p>    
+
+    <section>
+        <ul class="produtos">
+
+            <!-- CALABRESA PAULISTA -->
+
+            <li class="imgquadra">
+                <div class="container">
+                    <img src="imagens/calabresapaulista.png" alt="pizza de calabresa pualista" class="imgFood">
+                    <div>
+                        <p class="nome">Calabresa Pualista</p>
+                        <p class="ingredientes">Molho de tomate, calabresa, cebola e orégano.</p>
+                    </div>
+                </div>
+
+
+                <div class="displayDeQtdeEPreco">
+                    <p class="precoDaQuantidade">R$ 35,00</p>
+                    <div class="quantidade">
+                        <div class="diminuir">
+                            <span>-</span>
+                        </div>
+                        <p class="qtdeNumerico calp">0</p>
+                        <div class="aumentar">
+                            <span>+</span>
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+
+            <!-- FRANGO COM CATUPIRY -->
+
+            <li class="imgquadra">
+                <div class="container">
+                    <img src="imagens/marguerita.png" alt="pizza de calabresa pualista" class="imgFood">
+                    <div>
+                        <p class="nome">Frango com Catupiry</p>
+                        <p class="ingredientes">Molho de tomate, peito de frango e catupiry.</p>
+                    </div>
+                </div>
+
+
+                <div class="displayDeQtdeEPreco">
+                    <p class="precoDaQuantidade">R$ 30,00</p>
+                    <div class="quantidade">
+                        <div class="diminuir">
+                            <span>-</span>
+                        </div>
+                        <p class="qtdeNumerico frac">0</p>
+                        <div class="aumentar">
+                            <span>+</span>
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+
+            <!-- MARGUERITA -->
+
+            <li class="imgquadra">
+                <div class="container">
+                    <img src="imagens/calabresapaulista.png" alt="pizza de calabresa pualista" class="imgFood">
+                    <div>
+                        <p class="nome">Marguerita</p>
+                        <p class="ingredientes">Molho de tomate, muçarela, tomate e manjericão.</p>
+                    </div>
+                </div>
+
+
+                <div class="displayDeQtdeEPreco">
+                    <p class="precoDaQuantidade">R$ 35,00</p>
+                    <div class="quantidade">
+                        <div class="diminuir">
+                            <span>-</span>
+                        </div>
+                        <p class="qtdeNumerico marg">0</p>
+                        <div class="aumentar">
+                            <span>+</span>
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+
+            <!-- COCA-COLA -->
+
+            <li class="imgquadra">
+                <div class="container">
+                    <img src="imagens/cocacola.png" alt="pizza de calabresa pualista" class="imgFood">
+                    <div>
+                        <p class="nome">Coca-Cola - 250ml</p>
+                        <p class="ingredientes">Coca-Cola</p>
+                    </div>
+                </div>
+
+
+                <div class="displayDeQtdeEPreco">
+                    <p class="precoDaQuantidade">R$ 3,00</p>
+                    <div class="quantidade">
+                        <div class="diminuir">
+                            <span>-</span>
+                        </div>
+                        <p class="qtdeNumerico coca">2</p>
+                        <div class="aumentar">
+                            <span>+</span>
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+
+    </section>
+
+    <section>
+        <div class="finalizacao">
+            
+            <img src="imagens/carrinho.png" alt="carrinho">
+            
+            <p>Finalizar compra</p>
+
+            <p class="subtotal">Subtotal: <span class="subtotalValor">R$ 41,00</span></p>
+            
+            <p class="taxaDeEntrega">Taxa de Entrega: <span class="taxaDeEntregaValor">R$ 10,00 </span></p>
+
+            <p class="total">Total: <span class="totalValor">R$ 51,00</span></p>
+
+            <button class="pedirAgora">
+                <span><img src="imagens/checked.png" alt="checked">PEDIR AGORA</span>
+               
+            </button>
+
+        </div>
+    </section>
+
+   <script src="script/detalhesPizza.js"></script>
+</body>
+</html>

@@ -34,8 +34,7 @@
         if (email == '' || senha == ''){
             validade.innerHTML = `Preencha todos os campos acima *`
         } else if(email == "a@a" && senhaValor == "123a"){
-            // location.href = "index1.html"
-            location.href = "https://google.com"
+            location.href = "home.html"
         } else {
             console.log('errado')
         }
