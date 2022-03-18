@@ -1,7 +1,7 @@
 # Projeto "Chef Online"
 Projeto novo - colocando o conhecimento do figma em ação e partindo para o desenvolvimento do site.
 
-   <div>Olá! Você quer acessar o meu site? Então <a href="https://github.com/IvambergSilva/projeto-ChefOnline" target="_blank">clique aqui</a></div>
+   <div>Olá! Você quer acessar o meu site? Então <a href="https://ivambergsilva.github.io/projeto-ChefOnline/" target="_blank">clique aqui</a></div>
    <h4 align="center"> 🚧 Projeto "Chef Online" 🚀 Em construção... 🚧 </h4>
    
    <br>
