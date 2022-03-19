@@ -22,17 +22,12 @@ body{
     --corf: #3B5998;
 }
 
-
-.headerImg > div{
-    display: grid;
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.54) 48.44%, rgba(0, 0, 0, 0.19) 100%), url("/imagens/pizza_Central.png") center / cover;
-}
-
 .pizzaCentral {
     height: 190px;
     width: 360px;
     position: relative;
     margin: auto;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.54) 48.44%, rgba(0, 0, 0, 0.19) 100%), url("/imagens/pizza_Central.png") center / cover;
 }
 
 .headerImg {
