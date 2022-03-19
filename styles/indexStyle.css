@@ -154,7 +154,6 @@ body {
     font: 14px var(--fontprincipal);
     margin-bottom: 16px;
     background-color: var(--corf);
-
 }
 
 #facebook:hover {
@@ -201,7 +200,6 @@ body {
     color: var(--cor3);
     margin-left: 4px;
 }
-
 
 #google:hover {
     transform: scale(1.05);
