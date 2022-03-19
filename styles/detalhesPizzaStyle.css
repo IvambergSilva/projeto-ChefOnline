@@ -230,6 +230,7 @@ body{
     border: none;
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .pedirAgora:hover{
