@@ -25,7 +25,7 @@ body{
 
 .headerImg > div{
     display: grid;
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.54) 48.44%, rgba(0, 0, 0, 0.19) 100%), url("/imagens/pizzacentral.png") center / cover;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.54) 48.44%, rgba(0, 0, 0, 0.19) 100%), url("/imagens/pizzaCentral.png") center / cover;
 }
 
 .pizzaCentral {

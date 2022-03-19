@@ -123,3 +123,9 @@ diminuirCoca.addEventListener("click", function(){
     totalValor.innerHTML = `R$ ${cont + contC + 10},00`
     }
 })
+
+var pedirAgora = document.querySelector(".pedirAgora")
+
+pedirAgora.addEventListener("click", function(){
+    location.href = "final.html"
+})

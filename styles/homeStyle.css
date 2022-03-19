@@ -95,7 +95,15 @@ header{
     transform: scale(1.2);
 }
 
-
+header > p {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #FFF;
+    text-align: center;
+    width: 340px;
+    margin: 55px auto;
+    font: 12px var(--fontprincipal);
+    border-radius: 20px;
+}
 
 .subtitulo {
     font: bold 16px var(--fontprincipal);

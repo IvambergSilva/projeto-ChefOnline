@@ -50,6 +50,7 @@ p:nth-child(3){
 
 a {
     text-decoration: none;
+    color: var(--corf)
 }
 
 a::after {
@@ -68,7 +69,4 @@ p:last-child:hover {
     background: linear-gradient();
     transform: scale(1.1);
     transition: 1s;
-}
-
-ul{
 }
